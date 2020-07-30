@@ -17,6 +17,10 @@ Here's why:
 * Nmap Rocks.
 * Security reporting is time consuming. Automate as much as you can.
 
+### Nmap XML to JSON?
+
+If you have a need for Nmap results in **json** output. It would not be difficult to adapt this script to extract the required data points and generate **json** from the python **results** dictionary.
+
 
 ### Built With
 
