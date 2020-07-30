@@ -1,12 +1,12 @@
 ## Nmap XML to CSV
 
-There are many great projects and scripts around for generating Nmap reports from XML. With this script I needed a simple python script that I could customise the output data.
+There are many great projects and scripts around for generating Nmap reports from XML. With this script I needed a simple python script that I could easily customise the output **csv**.
 
-The Nmap XML has so much detailed information it is difficult to get an all in one reporting script that pulls everything you need for your reporting. 
+Nmap XML has so much detailed information it is difficult to get an all in one reporting script that pulls everything you need for your reporting.
 
-Use this script as a basis to extract any information you need into csv columns (each host on a row).
+You may find this script useful as a template to extract any information you need into csv columns (each host on a row).
 
-Default script extracts *open ports* only and shows **product** in the port column if found otherwise it shows **open**.
+The default script extracts *open ports* only and shows **product** in the port column if found otherwise it shows **open**.
 
 Also shows **ptr** for host and number of filtered ports (for an idea of firewall coverage).
 
@@ -39,6 +39,5 @@ Here's why:
 ### Built With
 
 * [Python](https://python.org)
-* [Nmap](https://nmap.org)
-* [Nmap XML](https://nmap.org/book/output-formats-xml-output.html)
+* [Python-Pandas](https://pandas.pydata.org/)
 
