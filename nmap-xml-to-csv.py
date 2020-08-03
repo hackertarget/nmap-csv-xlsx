@@ -59,6 +59,8 @@ for host in e.findall('.//host'):
             if port_tmp.find('service'):
                 if 'product' in port_tmp.find('service').attrib:
                     service = port_tmp.find('service').attrib['product']
+                    if 'version' in port_tmp.find('service').attrib:
+                        service = '%s %s' % (service, port_tmp.find('service').attrib['version'])
                 else:
                     service = 'open'
             else:
