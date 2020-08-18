@@ -56,7 +56,7 @@ for host in e.findall('.//host'):
             protocol = port_tmp.attrib['protocol']
             port = protocol + port_tmp.attrib['portid']
             open_ports.append(port)
-            if port_tmp.find('service'):
+            if port_tmp.find('service').attrib['name']:
                 if 'product' in port_tmp.find('service').attrib:
                     service = port_tmp.find('service').attrib['product']
                     if 'version' in port_tmp.find('service').attrib:
